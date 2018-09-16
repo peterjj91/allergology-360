@@ -1,0 +1,19 @@
+
+.logo {
+  width: 358px;
+  height: 26px;
+
+  @media(max-width: $screen-sm){
+    width: 234px;
+    height: 17px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+
+  }
+
+  &--mini {
+    width: 234px;
+    height: 17px;
+  }
+}

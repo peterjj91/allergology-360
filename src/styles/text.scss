@@ -1,0 +1,133 @@
+
+.head-h1 {
+  font-size: 44px;
+  //font-family: $museosanscyrl-700;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  @media(max-width: $screen-sm){
+    font-size: 33px;
+    line-height: 42px;
+    margin-bottom: 6px;
+  }
+}
+
+.head-h2 {
+  font-size: 36px;
+  //font-family: $museosanscyrl-700;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-sm){
+    font-size: 24px;
+  }
+}
+
+.head-h3 {
+  //font-family: $museosanscyrl-700;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+.head-h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    margin-bottom: 10px;
+  }
+
+  @media(max-width: $screen-sm){
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+}
+
+a {
+  @include transition(all .2s ease-in-out);
+
+  &:hover, &:focus {
+    opacity: $opacity-main;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-family: $museosanscyrl-700;
+}
+
+.color {
+  &--main {
+    color: $color-main;
+  }
+
+  &--promo {
+    color: $color-promo;
+  }
+
+  &--bold {
+    font-family: $museosanscyrl-700;
+  }
+
+  &--middle {
+    font-family: $museosanscyrl-500;
+  }
+
+  &--light {
+    color: $color-grey;
+  }
+
+  &--lighter {
+    color: $promo-lighter;
+  }
+
+  &--batman {
+    color: $color-batman;
+  }
+
+  &--mark {
+    background-color: rgba(39, 210, 118, 0.4);
+  }
+}
+
+
+.list {
+  &--number {
+    list-style-type: decimal;
+    padding-left: 15px !important;
+
+    li {
+      padding-left: 10px;
+    }
+  }
+
+  &--circle {
+    list-style: none;
+    padding-left: 0px !important;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 3px solid $color-main;
+      }
+    }
+  }
+}
