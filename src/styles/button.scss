@@ -21,7 +21,7 @@ button {
   &__promo {
     background-color: $color-bright;
     color: $color-main;
-    padding: 13px 50px 11px 50px;
+    padding: 13px 20px 11px 20px;
     font-size: 15px;
     font-family: $museosanscyrl-700;
     font-weight: bold;
@@ -37,8 +37,9 @@ button {
     }
 
     &:hover, &:focus {
-      opacity: $opacity-main;
-      color: $color-main;
+      opacity: 1;
+      background: $color-main;
+      color: white;
       text-decoration: none;
     }
 

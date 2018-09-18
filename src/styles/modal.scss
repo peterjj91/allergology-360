@@ -116,10 +116,6 @@
           z-index: 2;
         }
 
-        @media(max-width: $screen-sm){
-
-        }
-
         svg {
           fill: white;
           width: 35px;
@@ -163,7 +159,11 @@
         }
         @media(max-width: $screen-sm){
           width: 260px;
+          width: 85%;
           margin: 0;
+        }
+        @media(max-width: $screen-xs){
+
         }
       }
 
@@ -197,7 +197,10 @@
             }
 
             @media(max-width: $screen-sm){
-              right: 275px;
+              //right: 275px;
+              @media(max-width: $screen-sm){
+                right: 88%;
+              }
             }
           }
         }
